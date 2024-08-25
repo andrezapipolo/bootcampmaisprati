@@ -1,0 +1,20 @@
+function Media(n1, n2, n3) {
+    const MediaNadador = (n1 + n2 + n3) / 3;
+    let grade;
+    if (MediaNadador >= 90) {
+        grade = 'A';
+    } else if (MediaNadador >= 80) {
+        grade = 'B';
+    } else if (MediaNadador >= 70) {
+        grade = 'C';
+    } else if (MediaNadador >= 60) {
+        grade = 'D';
+    } else if (MediaNadador >= 50) {
+        grade = 'E';
+    } else {
+        grade = 'F';
+    }
+    console.log(`Conceito: ${grade}`);
+}
+
+Media(15, 9, 78);

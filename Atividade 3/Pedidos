@@ -1,0 +1,14 @@
+let pedidos = [
+  { cliente: "Carlos", produto: "Livro", quantidade: 2 },
+  { cliente: "Ana", produto: "Caneta", quantidade: 7 }
+];
+
+let totalPorCliente = {};
+pedidos.forEach(pedido => {
+  if (!totalPorCliente[pedido.cliente]) {
+    totalPorCliente[pedido.cliente] = 0;
+  }
+  totalPorCliente[pedido.cliente] += pedido.quantidade;
+});
+
+console.log(totalPorCliente);

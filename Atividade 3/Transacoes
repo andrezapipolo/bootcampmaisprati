@@ -1,0 +1,15 @@
+let transacoes = [
+  { tipo: "entrada", valor: 350 },
+  { tipo: "saída", valor: 20 }
+];
+
+let saldoFinal = 0;
+transacoes.forEach(transacao => {
+  if (transacao.tipo === "entrada") {
+    saldoFinal += transacao.valor;
+  } else {
+    saldoFinal -= transacao.valor;
+  }
+});
+
+console.log("Saldo final: " + saldoFinal);

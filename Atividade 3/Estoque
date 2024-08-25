@@ -1,0 +1,12 @@
+let estoque = [
+  { produto: "Tomate", quantidade: 15, minimo: 7 },
+  { produto: "Batata", quantidade: 10, minimo: 9 }
+];
+
+estoque.forEach(item => {
+  if (item.quantidade < item.minimo) {
+    item.quantidade *= 2;
+  }
+});
+
+console.log(estoque);

@@ -1,0 +1,18 @@
+function calculadoraIMC(weight, height) {
+    const imc = weight / (height * height);
+    if (imc < 18.5) {
+        console.log("Abaixo do peso");
+    } else if (imc < 24.9) {
+        console.log("Peso normal");
+    } else if (imc < 29.9) {
+        console.log("Sobrepeso");
+    } else if (imc < 34.9) {
+        console.log("Obesidade grau I");
+    } else if (imc < 39.9) {
+        console.log("Obesidade grau II");
+    } else {
+        console.log("Obesidade grau III");
+    }
+}
+
+calculadoraIMC(89, 1.66);

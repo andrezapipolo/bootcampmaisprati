@@ -1,0 +1,11 @@
+let funcionarios = [
+  { nome: "Pedro", cargo: "Gerente", salario: 3000 },
+  { nome: "Lucas", cargo: "Assistente", salario: 1413 }
+];
+
+let salarioMinimo = 1412;
+for (let funcionario of funcionarios) {
+  if (funcionario.salario > salarioMinimo) {
+    console.log(funcionario.nome + " ganha mais que " + salarioMinimo);
+  }
+}

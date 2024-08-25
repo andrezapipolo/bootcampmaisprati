@@ -1,0 +1,11 @@
+function Fatorial(n) {
+    let Resultado = 1;
+    let i = n;
+    while (i > 0) {
+        Resultado *= i;
+        i--;
+    }
+    console.log(Resultado);
+}
+
+Fatorial(5);

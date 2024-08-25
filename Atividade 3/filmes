@@ -1,0 +1,11 @@
+let filmes = [
+  { titulo: "Once", diretor: "John Carney", anoLancamento: 2007 },
+  { titulo: "My Blueberry Nights", diretor: "Wong Kar-Wai", anoLancamento: 2008 }
+];
+
+let titulos = [];
+filmes.forEach(filme => {
+  titulos.push(filme.titulo);
+});
+
+console.log(titulos);

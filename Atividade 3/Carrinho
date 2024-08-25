@@ -1,0 +1,15 @@
+let carrinho = {
+  itens: [
+    { nome: "Chocolate", quantidade: 1, precoUnitario: 5 },
+    { nome: "Biscoito", quantidade: 2, precoUnitario: 3 },
+    { nome: "Arroz", quantidade: 3, precoUnitario: 3 },
+    { nome: "Feijão", quantidade: 2, precoUnitario: 3 }
+  ]
+};
+
+let totalCarrinho = 0;
+carrinho.itens.forEach(item => {
+  totalCarrinho += item.quantidade * item.precoUnitario;
+});
+
+console.log("Valor total do carrinho: " + totalCarrinho);

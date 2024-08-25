@@ -1,0 +1,9 @@
+let produtos = [
+  { nome: "Skate", preco: 200, desconto: 0 },
+  { nome: "Patins", preco: 500, desconto: 0 }
+];
+
+produtos.forEach(produto => {
+  produto.preco = produto.preco * 0.9;
+  console.log(produto.nome + " agora custa " + produto.preco);
+});

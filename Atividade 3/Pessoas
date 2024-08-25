@@ -1,0 +1,8 @@
+let pessoas = [
+  { nome: "Giorgia", idade: 21, cidade: "Recife" },
+  { nome: "Rayssa", idade: 18, cidade: "Rio de Janeiro" }
+];
+
+for (let pessoa of pessoas) {
+  console.log(pessoa.nome + " tem " + pessoa.idade + " anos e mora em " + pessoa.cidade);
+}

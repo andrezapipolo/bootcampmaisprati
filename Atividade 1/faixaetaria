@@ -1,0 +1,33 @@
+function IdadeGrupo(Idade) {
+    let Grupo;
+    if (Idade >= 0 && Idade <= 12) {
+        Grupo = "Criança";
+    } else if (Idade >= 13 && Idade <= 17) {
+        Grupo = "Adolescente";
+    } else if (Idade >= 18 && Idade <= 59) {
+        Grupo = "Adulto";
+    } else if (Idade >= 60) {
+        Grupo = "Idoso";
+    } else {
+        Grupo = "Idade inválida";
+    }
+
+    switch (Grupo) {
+        case "Criança":
+            console.log("Você é uma criança.");
+            break;
+        case "Adolescente":
+            console.log("Você é um adolescente.");
+            break;
+        case "Adulto":
+            console.log("Você é um adulto.");
+            break;
+        case "Idoso":
+            console.log("Você é um idoso.");
+            break;
+        default:
+            console.log("Idade inválida.");
+    }
+}
+
+IdadeGrupo(5);

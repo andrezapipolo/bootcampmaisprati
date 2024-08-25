@@ -1,0 +1,17 @@
+function CategoriaDoNadador(Idade) {
+    if (Idade >= 5 && Idade <= 7) {
+        console.log("Infantil A");
+    } else if (Idade >= 8 && Idade <= 10) {
+        console.log("Infantil B");
+    } else if (Idade >= 11 && Idade <= 13) {
+        console.log("Juvenil A");
+    } else if (Idade >= 14 && Idade <= 17) {
+        console.log("Juvenil B");
+    } else if (Idade >= 18) {
+        console.log("Adulto");
+    } else {
+        console.log("Idade fora das categorias");
+    }
+}
+
+CategoriaDoNadador(12);

@@ -1,0 +1,10 @@
+function SomasDosDigitos(num) {
+    let Soma = 0;
+    do {
+        Soma += num % 10;
+        num = Math.floor(num / 10);
+    } while (num > 0);
+    console.log(Soma);
+}
+
+SomasDosDigitos(897);

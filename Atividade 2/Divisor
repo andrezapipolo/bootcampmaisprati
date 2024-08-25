@@ -1,0 +1,10 @@
+function MaiorDivisor(a, b) {
+    do {
+        let temp = b;
+        b = a % b;
+        a = temp;
+    } while (b !== 0);
+    console.log(a);
+}
+
+MaiorDivisor(56, 98);

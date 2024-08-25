@@ -1,0 +1,17 @@
+let produto = {
+  preco: 50,
+  peso: 20,
+  quantidade: 5
+};
+
+function filtrarPropriedades(obj, valorMinimo) {
+  let novoObjeto = {};
+  for (let propriedade in obj) {
+    if (obj[propriedade] > valorMinimo) {
+      novoObjeto[propriedade] = obj[propriedade];
+    }
+  }
+  return novoObjeto;
+}
+
+console.log(filtrarPropriedades(produto, 10));

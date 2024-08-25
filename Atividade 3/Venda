@@ -1,0 +1,15 @@
+let empresa = {
+  departamentos: [
+    { nome: "Vendas", funcionarios: ["Caio", "Maria"] },
+    { nome: "Estoque", funcionarios: ["Carlos", "Sarah"] },
+    { nome: "Cosmeticos", funcionarios: ["Danilo", "Daniel"] },
+    { nome: "Caixa", funcionarios: ["Jessica", "Clara"] },
+    { nome: "Repositor", funcionarios: ["Giorgia", "Ludmilla"] }
+  ]
+};
+
+for (let departamento of empresa.departamentos) {
+  for (let funcionario of departamento.funcionarios) {
+    console.log(funcionario + " trabalha no departamento de " + departamento.nome);
+  }
+}

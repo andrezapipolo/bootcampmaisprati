@@ -1,0 +1,9 @@
+function AnoB(Ano) {
+    if ((Ano % 4 === 0 && Ano % 100 !== 0) || Ano % 400 === 0) {
+        console.log("O ano é bissexto");
+    } else {
+        console.log("O ano não é bissexto");
+    }
+}
+
+AnoB(2025);

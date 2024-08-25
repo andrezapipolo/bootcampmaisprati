@@ -1,0 +1,11 @@
+function Piramedes(Linhas) {
+    for (let i = 1; i <= Linhas; i++) {
+        let Linhas = '';
+        for (let j = 1; j <= i; j++) {
+            Linhas += j + ' ';
+        }
+        console.log(Linhas);
+    }
+}
+
+Piramedes(4);

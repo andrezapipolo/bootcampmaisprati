@@ -1,0 +1,13 @@
+function PrintStrela(Linha) {
+    let i = Linha;
+    do {
+        let Estrela = '';
+        for (let j = 0; j < i; j++) {
+            Estrela += '*';
+        }
+        console.log(Estrela);
+        i--;
+    } while (i > 0);
+}
+
+PrintStrela(10);

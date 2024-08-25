@@ -1,0 +1,10 @@
+function ContDigito(num) {
+    let count = 0;
+    do {
+        num = Math.floor(num / 10);
+        count++;
+    } while (num > 0);
+    console.log(count);
+}
+
+ContDigito(12);

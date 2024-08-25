@@ -1,0 +1,11 @@
+function Polindromo(Numero) {
+    let Original = Numero;
+    let Reverso = 0;
+    while (Numero > 0) {
+        Reverso = Reverso * 10 + (Numero % 10);
+        Numero = Math.floor(Numero / 10);
+    }
+    console.log(Original === Reverso ? "É palíndromo" : "Não é palíndromo");
+}
+
+Polindromo(12);

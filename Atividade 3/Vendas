@@ -1,0 +1,11 @@
+let vendas = [
+  { produto: "Vestido", quantidade: 2, valor: 250 },
+  { produto: "Sapato", quantidade: 1, valor: 300 }
+];
+
+let totalVendas = 0;
+vendas.forEach(venda => {
+  totalVendas += venda.quantidade * venda.valor;
+});
+
+console.log("Valor total das vendas: " + totalVendas);

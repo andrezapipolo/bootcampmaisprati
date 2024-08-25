@@ -1,0 +1,10 @@
+function NumeroeroInvertido(Numero) {
+    let reversed = 0;
+    while (Numero > 0) {
+        reversed = reversed * 10 + (Numero % 10);
+        Numero = Math.floor(Numero / 10);
+    }
+    console.log(reversed);
+}
+
+NumeroeroInvertido(567);

@@ -1,0 +1,13 @@
+function FibonacciSequencia() {
+    let a = 0, b = 1, next;
+    console.log(a); // Primeiro número
+    console.log(b); // Segundo número
+    for (let i = 2; i < 10; i++) {
+        next = a + b; // Soma dos dois números anteriores
+        console.log(next);
+        a = b; // Atualiza o primeiro número
+        b = next; // Atualiza o segundo número
+    }
+}
+
+FibonacciSequencia();

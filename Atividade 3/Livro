@@ -1,0 +1,19 @@
+let livro = {
+  titulo: "Chef Profissional",
+  autor: "Instituto Americano de Culinária",
+  anoPublicacao: "2017 9ª edição",
+  genero: "Culinária"
+};
+
+let temEditora = false;
+for (let propriedade in livro) {
+  if (propriedade === "editora") {
+    temEditora = true;
+  }
+}
+
+if (!temEditora) {
+  livro.editora = "Senac São Paulo";
+}
+
+console.log(livro);
